@@ -21,7 +21,7 @@ class Goods extends React.Component {
                     number={index + 1} 
                     rating={good.rating} 
                     trand={good.trand} 
-                    onChange={() => { this.props.addProductToCart(index)}}
+                    onChange={(e) => { this.props.addProductToCart(index, e)}}
                     />
                 </li>
 
@@ -32,6 +32,7 @@ class Goods extends React.Component {
 
     }
     render() {
+        
         return (
             <div className={classes.Goods}>
                 <h1>Список товаров</h1>
@@ -49,7 +50,7 @@ class Goods extends React.Component {
                     {this.renderGoods()}
 
                 </ul>
-                <Footer/>
+                <Footer count={this.props.state.cart.length}/>
 
 
 
@@ -70,7 +71,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        addProductToCart: (key) => dispatch(addProductToCart(key))
+        addProductToCart: (key, e) => dispatch(addProductToCart(key, e))
     }
 
 }

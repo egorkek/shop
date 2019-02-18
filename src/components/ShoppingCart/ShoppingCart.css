@@ -1,0 +1,28 @@
+.ShoppingCart section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+
+}
+
+.ShoppingCart p{
+    font-size: 15px
+}
+
+.ShoppingCart section div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+
+}
+.ShoppingCart section div div{
+    border: 1px solid gold;
+    margin-right: 5px
+    
+}
+.ShoppingCart h3{
+    font-size: 20px;
+    margin: 0;
+    padding: 15px 20px;
+}

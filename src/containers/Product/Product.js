@@ -10,7 +10,7 @@ return(
         <p>{props.trand}</p>
         <p>{props.PriceSegment}</p>
         <p>{props.reviews}</p>
-        <input type='checkbox' onChange={()=>props.onChange()}></input>
+        <input type='checkbox' onChange={(e)=>props.onChange(e)}></input>
 
     </div>
 

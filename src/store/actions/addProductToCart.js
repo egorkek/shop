@@ -1,7 +1,13 @@
-export function addProductToCart(key) {
+export function addProductToCart(key,e) {
+    
+
     return (dispatch, getState)=>{
         const prevCart = getState().cart;
-        prevCart.push(getState().goods[key])
+        e.target.checked ? 
+            prevCart.push(getState().goods[key]) 
+            :
+            prevCart.splice(prevCart.indexOf(getState().goods[key]),1)
+        
         dispatch(forDispatch(prevCart))
         console.log(getState().cart)
         
