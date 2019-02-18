@@ -1,0 +1,10 @@
+.Product{
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 2fr 4fr 3fr 3fr;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+
+}
+
