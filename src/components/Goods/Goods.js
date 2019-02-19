@@ -7,21 +7,21 @@ import Footer from '../Footer/Footer'
 
 
 class Goods extends React.Component {
-    
+
 
     renderGoods = () => {
         const goods = this.props.state.goods
         return goods.map((good, index) => {
             return (
                 <li key={index}>
-                    <Product 
-                    PriceSegment={good.PriceSegment} 
-                    reviews={good.reviews} 
-                    name={good.name} 
-                    number={index + 1} 
-                    rating={good.rating} 
-                    trand={good.trand} 
-                    onChange={(e) => { this.props.addProductToCart(index, e)}}
+                    <Product
+                        PriceSegment={good.PriceSegment}
+                        reviews={good.reviews}
+                        name={good.name}
+                        number={index + 1}
+                        rating={good.rating}
+                        trand={good.trand}
+                        onChange={(e) => { this.props.addProductToCart(index, e) }}
                     />
                 </li>
 
@@ -32,7 +32,7 @@ class Goods extends React.Component {
 
     }
     render() {
-        
+
         return (
             <div className={classes.Goods}>
                 <h1>Список товаров</h1>
@@ -50,7 +50,7 @@ class Goods extends React.Component {
                     {this.renderGoods()}
 
                 </ul>
-                <Footer count={this.props.state.cart.length}/>
+                <Footer count={this.props.state.cart.length} />
 
 
 
