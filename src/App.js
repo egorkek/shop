@@ -19,9 +19,6 @@ class App extends Component {
                 <Route path={'/shopping_cart/'} component={ShoppingCart}/>
             </Switch>
             ) }
-            
-            
-
         </Layout>
 
     );

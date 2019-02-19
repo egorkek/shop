@@ -7,7 +7,7 @@ return(
         <p>{props.number}</p>
         <p>{props.name}</p>
         <p>{props.rating}</p>
-        <p>{props.trand}</p>
+        <p style={{color: 'green'}}>{props.trand}</p>
         <p>{props.PriceSegment}</p>
         <p>{props.reviews}</p>
         <input type='checkbox' onChange={(e)=>props.onChange(e)}></input>

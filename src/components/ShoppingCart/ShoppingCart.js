@@ -41,6 +41,7 @@ class ShoppingCart extends React.Component{
 
 
         </section>
+        <footer></footer>
     
 
         </div>

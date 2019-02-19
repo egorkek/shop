@@ -12,10 +12,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-content: center
     
 
 
 }
+.ShoppingCart footer{
+    margin-top: 20px;
+    height: 50px;
+    background-color: #eee;
+}
+
 .ShoppingCart section div div{
     border: 1px solid gold;
     margin-right: 5px
