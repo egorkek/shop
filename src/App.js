@@ -7,7 +7,6 @@ import { connect } from 'react-redux'
 
 class App extends Component {
     render() {
-        console.log(!!this.props.state.length);
 
 
         return (

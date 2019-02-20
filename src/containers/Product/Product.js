@@ -9,10 +9,9 @@ const Product = (props) => {
             <p>{props.rating}</p>
             <p style={{ color: 'green' }}>{props.trand}</p>
             <div>{ '\u20BD'.repeat(props.PriceSegment)}</div>
-            <p>{props.reviews}</p>
+            <p> {props.reviews ? (<span><i className="far fa-comment"/> {props.reviews} </span>) : null}</p>
             <input id={props.number} type='checkbox' onChange={(e) => props.onChange(e)}/>
             <label htmlFor={props.number}></label>
-
         </div>
 
     )

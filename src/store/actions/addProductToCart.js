@@ -11,7 +11,6 @@ export function addProductToCart(key, e) {
             prevCart.splice(prevCart.indexOf(getState().goods[key]), 1)
 
         dispatch(forDispatch(prevCart))
-        console.log(getState().cart)
 
 
 

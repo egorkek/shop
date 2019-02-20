@@ -11,6 +11,9 @@
 .Product p:nth-child(2){
     font-weight: bolder
 }
+.Product i{
+  font-size: 13px;
+}
 
 .Product div{
     padding: 5px 15px;
