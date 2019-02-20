@@ -29,12 +29,11 @@ class ShoppingCart extends React.Component {
         return (
             <div className={classes.ShoppingCart}>
                 <h1>Ваши товары</h1>
-                <p>Вы выбрали {this.props.state.length} {goods}: {this.renderGoods()}</p>
+                <p>Вы выбрали {this.props.state.length} {goods}: <span>{this.renderGoods()}</span></p>
                 <h2>Преимущество покупок у нас</h2>
                 <section>
                     <div>
                         <div><h3>1</h3></div>
-
                         <p>Мы классные</p>
                     </div>
                     <div>
@@ -46,8 +45,6 @@ class ShoppingCart extends React.Component {
 
                         <p>Даже сложно описать всю нашу крутость</p>
                     </div>
-
-
                 </section>
                 <footer></footer>
 

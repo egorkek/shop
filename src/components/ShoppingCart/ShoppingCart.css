@@ -7,6 +7,9 @@
 .ShoppingCart p{
     font-size: 15px
 }
+.ShoppingCart span{
+    font-weight: bold;
+}
 
 .ShoppingCart section div{
     display: flex;

@@ -1,3 +1,4 @@
+import {ADD_PRODUCT_TO_CART} from '../actions/actionsTypes'
 const initialState = {
     goods: [
         {
@@ -31,7 +32,7 @@ const initialState = {
 
 export default function RootReducer(state = initialState, action) {
     switch (action.type) {
-        case 'ADD_PRODUCT_TO_CART':
+        case ADD_PRODUCT_TO_CART:
             return {
                 ...state,
                 cart: action.cart

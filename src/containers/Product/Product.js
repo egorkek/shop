@@ -8,9 +8,10 @@ const Product = (props) => {
             <p>{props.name}</p>
             <p>{props.rating}</p>
             <p style={{ color: 'green' }}>{props.trand}</p>
-            <p>{props.PriceSegment}</p>
+            <div>{ '\u20BD'.repeat(props.PriceSegment)}</div>
             <p>{props.reviews}</p>
-            <input type='checkbox' onChange={(e) => props.onChange(e)}></input>
+            <input id={props.number} type='checkbox' onChange={(e) => props.onChange(e)}/>
+            <label htmlFor={props.number}></label>
 
         </div>
 

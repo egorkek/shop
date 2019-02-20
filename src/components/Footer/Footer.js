@@ -17,7 +17,10 @@ class Footer extends React.Component {
         } else {
             return (
                 <div className={classes.Footer}>
-                    <p>Вы выбрали {this.props.count} товара <NavLink to='/shopping_cart'><button>Перейти в корзину</button></NavLink></p>
+                    <span>Вы выбрали </span> 
+                    <div>{this.props.count}</div>
+                    <span>товара </span> 
+                    <NavLink to='/shopping_cart'><button>Перейти в корзину</button></NavLink>
 
                 </div>
             )

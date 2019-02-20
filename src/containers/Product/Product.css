@@ -7,4 +7,39 @@
     margin-bottom: 10px;
 
 }
+.Product div{
+    padding: 5px 15px;
+    border: 1px solid #eee;
+    max-width: max-content;
+    border-radius: 20px;
 
+}
+
+input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 1px solid rgb(212, 47, 59);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+    text-align: center;
+    color: transparent;
+    transition: .2s;
+  }
+  
+
+  input[type=checkbox]:checked + label:before {
+    background-color: rgb(212, 47, 59);
+    color: #fff;
+  }

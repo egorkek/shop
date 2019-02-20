@@ -1,3 +1,5 @@
+import {ADD_PRODUCT_TO_CART} from './actionsTypes'
+
 export function addProductToCart(key, e) {
 
 
@@ -19,7 +21,7 @@ export function addProductToCart(key, e) {
 
 function forDispatch(cart) {
     return {
-        type: 'ADD_PRODUCT_TO_CART',
+        type: ADD_PRODUCT_TO_CART,
         cart
     }
 

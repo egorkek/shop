@@ -2,16 +2,30 @@
     display: flex;
     justify-content: center;
     height: 60px;
-    background-color: grey;
+    background-color: rgb(58,49,57);
     width: 100%;
     color: white
 
 }
+
+.Footer div{
+    display: grid;
+    align-items: center;
+    
+    height: 22px;
+    width: 22px;
+    border-radius: 180px;
+    margin: 5px;
+    text-align: center;
+    background-color: black;
+}
+
 .Footer{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 60px;
-    background-color: red;
+    background-color: rgb(212, 47, 59);
     width: 100%;
     color: white
 
