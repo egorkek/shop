@@ -7,6 +7,11 @@
     margin-bottom: 10px;
 
 }
+
+.Product p:nth-child(2){
+    font-weight: bolder
+}
+
 .Product div{
     padding: 5px 15px;
     border: 1px solid #eee;

@@ -1,6 +1,8 @@
 import React from 'react'
 import classes from './ShoppingCart.css'
 import { connect } from 'react-redux'
+import image from '../../image/shape.svg'
+
 class ShoppingCart extends React.Component {
     renderGoods = () => {
         const goods = this.props.state;
@@ -46,6 +48,8 @@ class ShoppingCart extends React.Component {
                         <p>Даже сложно описать всю нашу крутость</p>
                     </div>
                 </section>
+                <img src={image} alt='none'/>
+                <div className={classes.AllForYou}>И все это &#8211; для вас</div>
                 <footer></footer>
 
 
